@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BoxCollectionViewCell" customModule="Collections" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="151" height="225"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="151" height="225"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="btf-4L-f0d">
+                        <rect key="frame" x="0.0" y="0.0" width="151" height="181.5"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="4ML-0d-Y76">
+                        <rect key="frame" x="5" y="186.5" width="51.5" height="34.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jL-RA-8Bs">
+                                <rect key="frame" x="0.0" y="0.0" width="51.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPS-gc-RZf">
+                                <rect key="frame" x="0.0" y="19.5" width="39.5" height="15"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="4ML-0d-Y76" secondAttribute="bottom" constant="4" id="6Tr-bM-EaS"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4ML-0d-Y76" secondAttribute="trailing" constant="12" id="SVR-tq-bKR"/>
+                <constraint firstAttribute="trailing" secondItem="btf-4L-f0d" secondAttribute="trailing" id="SeR-1E-0Qu"/>
+                <constraint firstItem="4ML-0d-Y76" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="Xk1-JA-hI9"/>
+                <constraint firstItem="4ML-0d-Y76" firstAttribute="top" secondItem="btf-4L-f0d" secondAttribute="bottom" constant="5" id="jRB-TU-1QQ"/>
+                <constraint firstItem="btf-4L-f0d" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kxl-r3-H2w"/>
+                <constraint firstItem="btf-4L-f0d" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="q10-L7-m0U"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="151" height="225"/>
+            <connections>
+                <outlet property="dateLabel" destination="sPS-gc-RZf" id="CY7-fD-dZP"/>
+                <outlet property="imageView" destination="btf-4L-f0d" id="ipT-WC-5az"/>
+                <outlet property="titleLabel" destination="7jL-RA-8Bs" id="JZA-mb-Xbv"/>
+            </connections>
+            <point key="canvasLocation" x="218.40000000000001" y="232.53373313343329"/>
+        </collectionViewCell>
+    </objects>
+</document>
